@@ -1,0 +1,141 @@
+<!-- 🗿 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactangle</title>
+    <style>
+        body {
+            background-color: #000;
+           position: relative;
+
+        }
+
+        .r {
+            background-color: rgb(97, 4, 66);
+            height: 300px;
+            width: 600px;
+            margin: 150px auto;
+            display: flex;
+            flex-direction: row;
+           
+                     
+       
+        }
+
+        .r1 {
+            background-color: black;
+            height: 100%;
+            width: 33.39%;
+        }
+
+        .r2 {
+            background-color: rgb(0, 0, 0);
+            height: 100%;
+            width: 33.39%;
+        }
+
+        .r3 {
+            background-color: rgb(0, 0, 0);
+            height: 100%;
+            width: 33.39%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <video autoplay playsinline muted loop preload="auto"
+    style="position: fixed; top:0; left:0;  width: 100vw; height: 100vh; z-index: -5; object-fit: cover;" type="video/mp4" src="">
+</video> 
+ 
+     <div class="r">
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+    </div>
+
+</body>
+<script defer>
+    const r = document.querySelector('.r');
+    const r1 = document.querySelector('.r1');
+    const r2 = document.querySelector('.r2');
+    const r3 = document.querySelector('.r3');
+    const body = document.querySelector('body');
+    const bgVideo = document.querySelector('video')
+
+    function setBgVideo(src) {
+        bgVideo.src = src;    
+        bgVideo.load();
+        bgVideo.play().catch(() => {}); errors
+    }
+    r.addEventListener('mouseleave',(e) => {
+        r1.style.backgroundColor = 'black'
+        r2.style.backgroundColor = 'black'
+        r3.style.backgroundColor = 'black'
+     
+
+    })
+    r1.addEventListener('mouseover', (e) => {
+        r1.style.backgroundColor = ' #3297d5'
+        r1.style.transition = '1s'
+        r1.style.cursor = 'progress'
+        r2.style.backgroundColor = ' #3297d5'
+        r2.style.transition = '1s'
+        r3.style.backgroundColor = ' #3297d5 '
+        r3.style.transition = '1s'
+        setBgVideo("assets/83ef6de2b2a89ceafabe1aa3b41bb12c.mp4")
+    });
+    r1.addEventListener('mouseleave', (e) => {
+        r1.style.backgroundColor = ' rgb(127, 126, 126) '
+        r1.style.transition = '1s'
+        r2.style.backgroundColor = ' rgb(127, 126, 126) '
+        r2.style.transition = '1s'
+        r3.style.backgroundColor = ' rgb(127, 126, 126) '
+        r3.style.transition = '1s'
+    });
+    r2.addEventListener('mouseover', (e) => {
+          r1.style.backgroundColor ='#1173c6'
+        r1.style.transition = '1s'
+        r2.style.backgroundColor = '#1173c6'
+        r2.style.transition = '1s'
+        r3.style.backgroundColor =' #1173c6'
+        r3.style.transition = '1s'
+        r3.style.transition = '1s';
+        setBgVideo("assets/39c94d6cbc7cc05666c3f241ffbf0c7f.mp4")
+      
+    
+    });
+    r2.addEventListener('mouseleave', (e) => {
+        r1.style.backgroundColor = 'rgba(75, 102, 157, 0.673'
+        r1.style.transition = '1s'
+        r2.style.backgroundColor = 'rgba(75, 102, 157, 0.673'
+        r2.style.transition = '1s'
+        r3.style.backgroundColor = 'rgba(75, 102, 157, 0.673'
+        r3.style.transition = '1s'
+    });
+    r3.addEventListener('mouseover', (e) => {
+     
+      r1.style.backgroundColor = 'rgba(35, 6, 65, 0.948)'
+        r1.style.transition = '1s'
+        r2.style.backgroundColor = 'rgba(35, 6, 65, 0.948)'
+        r2.style.transition = '1s'
+        r3.style.backgroundColor = 'rgba(35, 6, 65, 0.948)'
+        setBgVideo("assets/19530618d07fe5a12231accfe2c048bd_720w.mp4")
+    });
+    r3.addEventListener('mouseleave', (e) => {
+        r1.style.backgroundColor = '#f08da6b9'
+        r1.style.transition = '1s'
+        r2.style.backgroundColor = '#f08da6b9'
+        r2.style.transition = '1s'
+        r3.style.backgroundColor = '#f08da6b9'
+        r3.style.transition = '1s'
+    });
+
+</script>
+
+</html>  
+
+
